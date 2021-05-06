@@ -1,0 +1,40 @@
+.main-nav {
+font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+text-transform: uppercase;
+color: $basic_black;
+}
+
+.main-nav__wrapper {
+  min-width: 190px;
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  min-height: 66px;
+  text-align: center;
+  $font-color: $basic_black;
+  a {
+    color: $font-color;
+    &:hover,
+    &:focus {
+      color: lighten($font-color, 40%);
+    }
+    &:active {
+      color: lighten($font-color, 70%);
+    }
+  }
+  &--current a {
+    border-bottom: 2px solid $basic_green;
+  }
+}
