@@ -1,11 +1,11 @@
 .main-nav {
-font-family: Oswald;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 20px;
-text-transform: uppercase;
-color: $basic_black;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic_black;
 }
 
 .main-nav__wrapper {
@@ -24,16 +24,20 @@ color: $basic_black;
   min-height: 66px;
   text-align: center;
   $font-color: $basic_black;
+
   a {
     color: $font-color;
+
     &:hover,
     &:focus {
       color: lighten($font-color, 40%);
     }
+
     &:active {
       color: lighten($font-color, 70%);
     }
   }
+
   &--current a {
     border-bottom: 2px solid $basic_green;
   }

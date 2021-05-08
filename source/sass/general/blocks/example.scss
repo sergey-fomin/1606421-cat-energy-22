@@ -15,7 +15,7 @@
 
 .example__text {
   margin: 0 0 25px 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -40,7 +40,7 @@
 }
 
 .stats__description {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
@@ -58,26 +58,19 @@
 .example__changes-list {
   margin: 0 0 27px 0;
 }
-.example__changes-item {
 
-}
+//.example__changes-item
 
 .example__toggles {
   margin: 0;
 }
 
 // Вынести в отдельный блок?
-.slider {
+// .slider
 
-}
+//.slider__item
 
-.slider__item {
-
-}
-
-.slider__toggles {
-
-}
+//.slider__toggles
 
 .slider__toggle {
   font-size: 16px;
@@ -86,6 +79,4 @@
   text-align: center;
 }
 
-.slider__toggle--current {
-
-}
+//.slider__toggle--current

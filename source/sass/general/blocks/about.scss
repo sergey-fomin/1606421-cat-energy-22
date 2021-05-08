@@ -24,7 +24,7 @@
 }
 
 .about__item--leaf-icon {
-  background-image: url(../../../img/icon-leaf.svg);
+  background-image: url("../../../img/icon-leaf.svg");
   background-repeat: no-repeat;
 
   &::before {
@@ -36,7 +36,7 @@
 }
 
 .about__item--tub-icon {
-  background-image: url(../../../img/icon-tub.svg);
+  background-image: url("../../../img/icon-tub.svg");
   background-repeat: no-repeat;
 
   &::before {
@@ -48,7 +48,7 @@
 }
 
 .about__item--eat-icon {
-  background-image: url(../../../img/icon-eat.svg);
+  background-image: url("../../../img/icon-eat.svg");
   background-repeat: no-repeat;
 
   &::before {
@@ -60,7 +60,7 @@
 }
 
 .about__item--alarm-icon {
-  background-image: url(../../../img/icon-alarm.svg);
+  background-image: url("../../../img/icon-alarm.svg");
   background-repeat: no-repeat;
 
   &::before {
@@ -73,7 +73,7 @@
 
 .about__description {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
