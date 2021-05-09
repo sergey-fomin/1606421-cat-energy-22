@@ -1,6 +1,4 @@
-.extra-products {
-
-}
+// .extra-products
 
 .extra-products__wrapper {
   padding: 0 20px;
@@ -22,9 +20,7 @@
   }
 }
 
-.extra-product__link {
-
-}
+// .extra-product__link
 
 .extra-product__title {
   font-size: 16px;
@@ -34,30 +30,24 @@
   margin: 0 0 13px 0;
 }
 
-.extra-product__info {
-
-}
+// .extra-product__info
 
 .extra-info {
   margin-bottom: 15px;
 }
 
 .extra-info__row {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: $special_dark-grey;
 }
 
-.extra-info__unit {
-}
+// .extra-info__unit
 
-.extra-info__unit-price {
-}
+// .extra-info__unit-price
 
-.extra__button {
-
-}
+// .extra__button
 
 .extra-products__promo {
   margin: 39px 20px 35px 20px;
@@ -71,13 +61,11 @@
   padding: 58px 61px 53px 58px;
 }
 
-.extra-promo__image {
-
-}
+// .extra-promo__image
 
 .extra-promo__slogan {
   margin: 0;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $basic_white;
