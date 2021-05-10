@@ -31,8 +31,8 @@ $mobile-width-only: 767px;
 }
 
 .page-body {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
+  margin: 0;
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
