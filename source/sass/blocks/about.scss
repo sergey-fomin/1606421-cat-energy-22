@@ -21,53 +21,53 @@
   grid-template-columns: 60px auto;
   grid-row: min-content;
   grid-gap: 20px;
-}
 
-.about__item--leaf-icon {
-  background-image: url("../../../img/icon-leaf.svg");
-  background-repeat: no-repeat;
+  &--leaf-icon {
 
-  &::before {
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: $basic_green;
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basic_green;
+      background-image: url("../../img/icon-leaf.svg");
+      background-repeat: no-repeat;
+    }
   }
-}
 
-.about__item--tub-icon {
-  background-image: url("../../../img/icon-tub.svg");
-  background-repeat: no-repeat;
+  &--tub-icon {
 
-  &::before {
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: $basic_green;
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basic_green;
+      background-image: url("../../img/icon-tub.svg");
+      background-repeat: no-repeat;
+    }
   }
-}
 
-.about__item--eat-icon {
-  background-image: url("../../../img/icon-eat.svg");
-  background-repeat: no-repeat;
+  &--eat-icon {
 
-  &::before {
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: $basic_green;
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basic_green;
+      background-image: url("../../img/icon-eat.svg");
+      background-repeat: no-repeat;
+    }
   }
-}
 
-.about__item--alarm-icon {
-  background-image: url("../../../img/icon-alarm.svg");
-  background-repeat: no-repeat;
+  &--alarm-icon {
 
-  &::before {
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: $basic_green;
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basic_green;
+      background-image: url("../../img/icon-alarm.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
