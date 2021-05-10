@@ -21,16 +21,16 @@
   padding-right: 20px;
   padding-bottom: 22px;
   background-color: $basic_grey;
-}
 
-.abilities__item--weight-loss {
-  background-image: url("../../../img/cat-slim.svg");
-  background-repeat: no-repeat;
-}
+  &--weight-loss {
+    background-image: url("../../img/cat-slim.svg");
+    background-repeat: no-repeat;
+  }
 
-.abilities__item--mass-gain {
-  background-image: url("../../../img/cat-pro.svg");
-  background-repeat: no-repeat;
+  &--mass-gain {
+    background-image: url("../../img/cat-pro.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .abilities__title {
