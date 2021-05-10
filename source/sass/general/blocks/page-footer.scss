@@ -1,0 +1,54 @@
+.page-footer {
+  background-color: $basic_grey;
+  text-align: center;
+}
+
+.page-footer__wrapper {
+  padding: 39px 20px 22px 20px;
+}
+
+.page-footer__logo-text {
+  margin: 0 0 32px 0;
+
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__social {
+  margin: 0 0 49px 0;
+  padding: 0;
+  list-style: none;
+}
+
+//.social
+
+//.social__item
+
+//.social__link
+
+//.social__link--vkontakte
+
+//.social__link--instagram
+
+//.social__link--facebook
+
+.page-footer__copyright {
+  margin: 0;
+}
+
+//.copyright
+
+.copyright__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+//.copyright__link
