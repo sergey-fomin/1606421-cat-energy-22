@@ -1,0 +1,26 @@
+.main-map {
+  margin: 28px 19px 0 19px;
+}
+
+.main-map__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special_black;
+  text-transform: uppercase;
+}
+
+.main-map__adress {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: $special_dark-grey;
+}
+
+.main-map__map {
+  width: 100%;
+}
