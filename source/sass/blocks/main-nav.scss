@@ -26,14 +26,11 @@
     display: flex;
     justify-content: space-between;
     width: 440px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 478px;
-    }
   }
-
 }
 
 .main-nav__item {
