@@ -21,6 +21,19 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+    }
+  }
+
 }
 
 .main-nav__item {
@@ -29,19 +42,25 @@
   $font-color: $basic_black;
 
   a {
-    color: $font-color;
+    color: $basic_black;
 
     &:hover,
     &:focus {
-      color: lighten($font-color, 40%);
+      color: lighten($basic_black, 40%);
     }
 
     &:active {
-      color: lighten($font-color, 70%);
+      color: lighten($basic_black, 70%);
     }
   }
 
   &--current a {
     border-bottom: 2px solid $basic_green;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
