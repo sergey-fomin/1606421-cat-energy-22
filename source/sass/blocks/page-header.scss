@@ -13,9 +13,6 @@
 }
 
 .page-header__logo {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
-
   height: 66px;
 
   @media (min-width: $tablet-width) {
