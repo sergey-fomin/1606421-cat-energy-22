@@ -9,6 +9,8 @@ $special_grey: #cdcdcd;
 $special_grey-2: #666666;
 $special_light-grey: #e5e5e5;
 $special_light-grey-2: #eaeaea;
+$special_light-grey-3: #e7e7e7;
+$special_light-grey-4: #d9d9d9;
 $special_dark-grey: #444444;
 $special_dark-grey-2: #222222;
 $special_black: #111111;
@@ -46,4 +48,12 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.section-title {
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $basic_black;
 }
