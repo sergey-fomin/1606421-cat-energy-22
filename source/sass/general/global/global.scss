@@ -11,6 +11,8 @@ $special_light-grey: #e5e5e5;
 $special_light-grey-2: #eaeaea;
 $special_light-grey-3: #e7e7e7;
 $special_light-grey-4: #d9d9d9;
+$special_light-grey-5: #ebebeb;
+$special_light-grey-6: #d3d3d3;
 $special_dark-grey: #444444;
 $special_dark-grey-2: #222222;
 $special_black: #111111;
@@ -31,6 +33,14 @@ $special_black: #111111;
   font-weight: 400;
   background-color: $basic_white;
   min-height: 100%;
+}
+
+.page__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 27px 20px 41px 20px;
 }
 
 a {

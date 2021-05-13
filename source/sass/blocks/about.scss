@@ -1,0 +1,81 @@
+.about {
+  margin: 27px 20px 42px 20px;
+}
+
+.about__title {
+  margin: 0 0 38px 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about__item {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-row: min-content;
+  grid-gap: 20px;
+
+  &--leaf-icon {
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basic_green;
+      background-image: url("../../img/icon-leaf.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--tub-icon {
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basic_green;
+      background-image: url("../../img/icon-tub.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--eat-icon {
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basic_green;
+      background-image: url("../../img/icon-eat.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--alarm-icon {
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basic_green;
+      background-image: url("../../img/icon-alarm.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.about__description {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
