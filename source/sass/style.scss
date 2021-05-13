@@ -1,8 +1,10 @@
 // Global
 
-@import "general/global/normalize.scss";
+@import "general/normalize.scss";
 @import "general/fonts.scss";
-@import "general/global/global.scss";
+@import "general/variables.scss";
+@import "general/mixins.scss";
+@import "general/common.scss";
 
 // Blocks
 
