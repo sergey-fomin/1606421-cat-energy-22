@@ -5,6 +5,10 @@
   background-color: rgba($basic_green, 0.85);
   // background-image: url("../../img/index-background-cat.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_white;
+  }
 }
 
 .promo__wrapper {
@@ -36,6 +40,12 @@
   color: $basic_white;
   margin-top: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic_black;
+  }
 }
 
 .promo__slogan {
@@ -49,6 +59,12 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic_black;
+  }
 }
 
 .promo__image {
