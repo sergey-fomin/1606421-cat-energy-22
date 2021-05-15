@@ -1,9 +1,26 @@
 .example {
   background-color: $special_light-grey-2;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_white;
+    border-top: 1px solid $special_light-grey-7;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
+  }
 }
 
 .example__wrapper {
   padding: 27px 20px 31px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 30px 33px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 110px 67px 110px;
+  }
 }
 
 .example__title {
@@ -11,6 +28,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__text {
@@ -18,16 +40,49 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__stats-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+
+    @media (min-width: $desktop-width) {
+      width: 366px;
+    }
+  }
 }
 
 .example__stats-list {
-  margin: 0 0 17px 0;
+  margin: 0 0 25px 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 // Вынести в отдельный блок?
 .stats__item {
+  width: 124px;
+  height: 64px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -37,6 +92,11 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__description {
@@ -45,6 +105,11 @@
   line-height: 12px;
   color: $special_dark-grey;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__stats-text {
@@ -53,6 +118,11 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .example__changes-list {
