@@ -1,5 +1,20 @@
 .about {
-  margin: 27px 20px 42px 20px;
+  margin: 0;
+}
+
+.about__wrapper {
+  margin: 0 20px 42px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 47px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 
 .about__title {
@@ -7,62 +22,145 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .about__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .about__item {
   margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 60px auto;
-  grid-row: min-content;
+  grid-template-columns: min-content auto;
   grid-gap: 20px;
 
   &--leaf-icon {
     &::before {
-      content: "";
+      content: url("../../img/icon-leaf.svg");
       width: 60px;
       height: 60px;
       background-color: $basic_green;
-      background-image: url("../../img/icon-leaf.svg");
-      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
   &--tub-icon {
     &::before {
-      content: "";
+      content: url("../../img/icon-tub.svg");
       width: 60px;
       height: 60px;
       background-color: $basic_green;
-      background-image: url("../../img/icon-tub.svg");
-      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
   &--eat-icon {
     &::before {
-      content: "";
+      content: url("../../img/icon-eat.svg");
       width: 60px;
       height: 60px;
       background-color: $basic_green;
-      background-image: url("../../img/icon-eat.svg");
-      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
   &--alarm-icon {
     &::before {
-      content: "";
+      content: url("../../img/icon-alarm.svg");
       width: 60px;
       height: 60px;
       background-color: $basic_green;
-      background-image: url("../../img/icon-alarm.svg");
-      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 280px;
+    max-width: 250px;
+    grid-gap: 0;
+    grid-template-rows: min-content auto;
+
+    &--leaf-icon {
+      &::before {
+        width: 80px;
+        height: 80px;
+      }
+
+      &::after {
+        content: "1";
+        font-size: 280px;
+        color: $basic_grey;
+        grid-column: -2 / -1;
+        grid-row: 1/ -1;
+      }
+    }
+
+    &--tub-icon {
+      &::before {
+        width: 80px;
+        height: 80px;
+      }
+
+      &::after {
+        content: "2";
+        font-size: 280px;
+        color: $basic_grey;
+        grid-column: -2 / -1;
+        grid-row: 1/ -1;
+      }
+    }
+
+    &--eat-icon {
+      &::before {
+        width: 80px;
+        height: 80px;
+      }
+
+      &::after {
+        content: "3";
+        font-size: 280px;
+        color: $basic_grey;
+        grid-column: -2 / -1;
+        grid-row: 1/ -1;
+      }
+    }
+
+    &--alarm-icon {
+      &::before {
+        width: 80px;
+        height: 80px;
+      }
+
+      &::after {
+        content: "4";
+        font-size: 280px;
+        color: $basic_grey;
+        grid-column: -2 / -1;
+        grid-row: 1/ -1;
+      }
     }
   }
 }
@@ -74,4 +172,12 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    z-index: 2;
+  }
 }
