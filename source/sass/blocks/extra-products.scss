@@ -1,7 +1,40 @@
-// .extra-products
+.extra-products {
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto min-content;
+    grid-template-areas: "title title"
+                         "products promo";
+  }
+}
+
+.extra-products__title {
+  margin-bottom: 35px;
+  margin-left: 19px;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    margin-left: 67px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 81px;
+    margin-left: 110px;
+    grid-area: title;
+  }
+}
 
 .extra-products__wrapper {
   padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: products;
+  }
 }
 
 .extra-products__list {
@@ -14,13 +47,35 @@
   border-bottom: 1px solid $special_grey;
   padding-top: 13px;
   padding-bottom: 19px;
+  display: grid;
+  grid-template-areas: "link"
+                       "info"
+                       "button";
 
   &:nth-child(1) {
     border-top: 1px solid $special_grey;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px 38px;
+    border-left: 1px solid $special_grey;
+    border-right: 1px solid $special_grey;
+    grid-template-areas: "link info"
+                         "button button";
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+    grid-template-areas: "link info button";
+    grid-column-gap: 38px;
+  }
 }
 
-// .extra-product__link
+.extra-product__link {
+  grid-area: link;
+}
 
 .extra-product__title {
   font-size: 16px;
@@ -28,9 +83,16 @@
   color: $special_dark-grey-2;
   text-transform: uppercase;
   margin: 0 0 13px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-// .extra-product__info
+.extra-product__info {
+  grid-area: info;
+}
 
 .extra-info {
   margin-bottom: 15px;
@@ -41,16 +103,27 @@
   font-size: 14px;
   line-height: 14px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 // .extra-info__unit
 
 // .extra-info__unit-price
 
-// .extra__button
+.extra__button {
+  grid-area: button;
+}
 
 .extra-products__promo {
   margin: 39px 20px 35px 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: promo;
+  }
 }
 
 .extra-promo {
