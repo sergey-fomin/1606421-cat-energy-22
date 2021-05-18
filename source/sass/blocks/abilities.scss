@@ -48,8 +48,8 @@
   grid-template-columns: min-content auto;
   grid-template-rows: min-content;
   grid-template-areas: "title title"
-                       "text text"
-                       "link .";
+    "text text"
+    "link .";
 
   &--weight-loss {
     &::before {
@@ -86,8 +86,8 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: auto min-content;
     grid-template-areas: "title icon"
-                         "text icon"
-                         "link icon";
+      "text icon"
+      "link icon";
 
     &--weight-loss {
       &::before {
@@ -118,8 +118,8 @@
     max-width: 570px;
     grid-template-columns: min-content auto;
     grid-template-areas: "title title"
-                         "text text"
-                         "link .";
+      "text text"
+      "link .";
 
     &--weight-loss {
       &::before {
@@ -161,7 +161,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {

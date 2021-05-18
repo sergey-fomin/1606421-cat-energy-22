@@ -17,7 +17,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 22px 110px 82px 110px;
-
   }
 }
 
@@ -176,7 +175,7 @@
 }
 
 .form__radio-input {
-  &:checked+.form__radio-label::after {
+  &:checked + .form__radio-label::after {
     content: "";
     position: absolute;
     left: 8.3px;
@@ -190,7 +189,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    &:checked+.form__radio-label::after {
+    &:checked + .form__radio-label::after {
       left: 11px;
       top: 11px;
       width: 18px;
@@ -266,7 +265,7 @@
 }
 
 .form__checkbox-input {
-  &:checked+.form__checkbox-label::after {
+  &:checked + .form__checkbox-label::after {
     content: url("../../img/checkbox-icon.svg");
     position: absolute;
     left: 2px;
@@ -277,7 +276,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    &:checked+.form__checkbox-label::after {
+    &:checked + .form__checkbox-label::after {
       left: 7px;
       top: 7px;
     }

@@ -6,7 +6,7 @@
     margin: 0 auto;
     grid-template-columns: auto min-content;
     grid-template-areas: "title title"
-                         "products promo";
+      "products promo";
     grid-column-gap: 80px;
   }
 }
@@ -61,8 +61,8 @@
   box-sizing: border-box;
   display: grid;
   grid-template-areas: "link"
-                       "info"
-                       "button";
+    "info"
+    "button";
 
   &:nth-child(1) {
     border-top: 1px solid $special_grey;
@@ -73,7 +73,7 @@
     border-left: 1px solid $special_grey;
     border-right: 1px solid $special_grey;
     grid-template-areas: "link info"
-                         "button button";
+      "button button";
     justify-content: space-between;
   }
 
