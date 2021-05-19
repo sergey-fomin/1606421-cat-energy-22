@@ -1,22 +1,3 @@
-// Colors
-
-$basic_black: #000000;
-$basic_white: #ffffff;
-$basic_green: #68b738;
-$basic_green-2: #5eaa2f;
-$basic_grey: #f2f2f2;
-$special_grey: #cdcdcd;
-$special_grey-2: #666666;
-$special_light-grey: #e5e5e5;
-$special_light-grey-2: #eaeaea;
-$special_light-grey-3: #e7e7e7;
-$special_light-grey-4: #d9d9d9;
-$special_light-grey-5: #ebebeb;
-$special_light-grey-6: #d3d3d3;
-$special_dark-grey: #444444;
-$special_dark-grey-2: #222222;
-$special_black: #111111;
-
 // Global
 
 .page {
@@ -25,8 +6,8 @@ $special_black: #111111;
 }
 
 .page-body {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
+  margin: 0;
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -41,6 +22,18 @@ $special_black: #111111;
   line-height: 36px;
   font-weight: 400;
   margin: 27px 20px 41px 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 41px 30px 165px 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 23px 110px 165px 110px;
+  }
 }
 
 a {
