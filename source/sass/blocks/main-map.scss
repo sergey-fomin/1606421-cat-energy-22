@@ -1,17 +1,52 @@
 .main-map {
-  margin: 28px 19px 0 19px;
+  margin: 0;
+  position: relative;
+}
+
+
+.main-map__text-block {
+  padding: 28px 19px 26px 19px;
+  background-color: $basic_white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 62px 72px 51px 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+    height: 201px;
+    padding: 62px 89px 51px 76px;
+  }
 }
 
 .main-map__title {
+  width: 140px;
   margin: 0;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: $special_black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
 }
 
 .main-map__adress {
+  width: 140px;
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -19,8 +54,23 @@
   font-weight: 400;
   font-style: normal;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .main-map__map {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
