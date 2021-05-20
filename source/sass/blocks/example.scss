@@ -30,6 +30,7 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -42,6 +43,7 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -71,44 +73,19 @@
 }
 
 .example__stats-list {
-  margin: 0 0 25px 0;
+  margin: 0 0 34px 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
 
-// Вынести в отдельный блок?
-.stats__item {
-  width: 124px;
-  height: 64px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.stats__number {
-  font-size: 24px;
-  line-height: 24px;
-  text-align: center;
-
+  // Не получается!
+  // &:nth-child(n + 1) {
+  //   margin-right: 42px;
+  // }
   @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 37px;
-  }
-}
-
-.stats__description {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  color: $special_dark-grey;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    font-size: 14px;
-    line-height: 14px;
+    min-width: 366px;
   }
 }
 
