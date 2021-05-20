@@ -1,0 +1,45 @@
+.extra-info {
+  margin-bottom: 15px;
+}
+
+.extra-info__row {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.extra-info__unit {
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.extra-info__unit-price {
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    min-width: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 44px;
+    text-align: left;
+  }
+}
