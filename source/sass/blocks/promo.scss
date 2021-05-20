@@ -40,11 +40,15 @@
   color: $basic_white;
   margin-top: 0;
   margin-bottom: 25px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: $basic_black;
+    text-align: left;
+    display: block;
+    width: 414px;
   }
 }
 
