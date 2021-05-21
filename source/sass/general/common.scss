@@ -61,6 +61,8 @@ img {
   color: $basic_black;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
