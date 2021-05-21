@@ -267,6 +267,12 @@
     z-index: 2;
   }
 
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1.33);
+    transition: all 0.5s ease-in-out;
+  }
+
   @media (min-width: $tablet-width) {
     height: auto;
     padding-top: 0;
@@ -287,10 +293,4 @@
       padding-left: 27px;
     }
   }
-}
-
-.abilities__link:hover + .abilities__link::after,
-.abilities__link:focus .abilities__link::after {
-  transform: scaleX(1.33);
-  transition: all 0.5s ease-in-out;
 }

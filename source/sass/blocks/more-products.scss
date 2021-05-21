@@ -84,4 +84,13 @@
 .more-products__button {
   color: $special_dark-grey;
   background-color: $basic_grey;
+
+  &:focus,
+  &:hover {
+    background-color: $special_light-grey-5;
+  }
+
+  &:active {
+    color: rgba($special_dark-grey, 0.3);
+  }
 }
