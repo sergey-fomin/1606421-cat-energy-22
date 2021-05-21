@@ -60,3 +60,7 @@ img {
   font-weight: 400;
   color: $basic_black;
 }
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}

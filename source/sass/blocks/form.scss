@@ -11,7 +11,6 @@
   }
 }
 
-
 .form__product-goals-select {
   display: flex;
   flex-direction: column;
@@ -82,9 +81,9 @@
   //   border: 1px solid $special_light-grey-3;
   // }
 
-  // &:required:invalid {
-  //   border: 2px solid $special_pink;
-  // }
+  &:invalid {
+    border: 2px solid $special_pink;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

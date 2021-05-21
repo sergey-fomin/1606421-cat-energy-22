@@ -1,21 +1,38 @@
 .extra-promo {
   background-color: $basic_green;
+  background-image: url("../../img/gift-bg-mobile.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/gift-bg-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
+    background-image: url("../../img/gift-bg-tablet.jpg");
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-bg-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../../img/gift-bg-desktop.jpg");
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-bg-desktop@2x.jpg");
+    }
   }
 }
 

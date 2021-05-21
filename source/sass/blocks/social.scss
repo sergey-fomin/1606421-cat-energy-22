@@ -42,7 +42,7 @@
 }
 
 .social__link--vkontakte {
-  width: 23px;
+  min-width: 23px;
   height: 16px;
 }
 
@@ -55,4 +55,17 @@
 .social__link--facebook {
   width: 22px;
   height: 22px;
+
+  path {
+    stroke: $special_grey-2;
+    fill: none;
+  }
+
+  &:focus,
+  &:hover {
+    path {
+      stroke: $basic_green;
+      fill: none;
+    }
+  }
 }
