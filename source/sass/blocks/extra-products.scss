@@ -80,64 +80,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.extra-product {
-  border-bottom: 1px solid $special_grey;
-  padding-top: 13px;
-  padding-bottom: 19px;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-areas: "link"
-    "info"
-    "button";
-
-  &:nth-child(1) {
-    border-top: 1px solid $special_grey;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px 38px;
-    border-left: 1px solid $special_grey;
-    border-right: 1px solid $special_grey;
-    grid-template-areas: "link info"
-      "button button";
-    justify-content: space-between;
-  }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0 17px;
-    border-left: none;
-    border-right: none;
-    grid-template-areas: "link info button";
-    grid-template-columns: 1fr auto 244px;
-    grid-column-gap: 38px;
-  }
-}
-
-.extra-product__link {
-  grid-area: link;
-}
-
-.extra-product__title {
-  font-size: 16px;
-  line-height: 16px;
-  color: $special_dark-grey-2;
-  text-transform: uppercase;
-  margin: 0 0 13px 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
-
-.extra-product__info-table {
-  grid-area: info;
-
-  @media (min-width: $desktop-width) {
-    width: 288px;
-    margin-right: 32px;
+    min-width: 895px;
   }
 }
 
@@ -146,42 +91,22 @@
 }
 
 .extra-products__promo {
-  margin: 0 20px 35px 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 30px 76px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 39px 20px 35px 20px;
-    grid-area: promo;
-  }
-}
-
-.extra-promo {
   min-width: 280px;
-  height: 289px;
+  min-height: 289px;
+  margin: 39px 0 0 0;
+  padding: 58px 61px 43px 58px;
   box-sizing: border-box;
-  background-color: $basic_green;
-  padding: 58px 61px 53px 58px;
 
   @media (min-width: $tablet-width) {
-    height: 200px;
+    min-height: 200px;
+    margin: 69px 0 0 0;
+    padding: 57px 124px 60px 78px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
+    min-width: 245px;
     min-height: 289px;
-    margin: 0;
+    margin: 0 0 0 80px;
+    padding: 56px 43px 42px 41px;
   }
-}
-
-// .extra-promo__image
-
-.extra-promo__slogan {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: $basic_white;
 }
