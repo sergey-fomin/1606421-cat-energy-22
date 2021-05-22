@@ -36,3 +36,22 @@
     height: 54px;
   }
 }
+
+.button--catalog-font {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--more-products {
+  color: $special_dark-grey;
+  background-color: $basic_grey;
+
+  &:focus,
+  &:hover {
+    background-color: $special_light-grey-5;
+  }
+
+  &:active {
+    color: rgba($special_dark-grey, 0.3);
+  }
+}

@@ -1,6 +1,6 @@
 .more-products {
   border-bottom: 1px solid $special_light-grey-5;
-  padding: 25px 20px;
+  padding: 26px 20px 25px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,19 +77,5 @@
     width: 170px;
     font-size: 16px;
     line-height: 18px;
-  }
-}
-
-.more-products__button {
-  color: $special_dark-grey;
-  background-color: $basic_grey;
-
-  &:focus,
-  &:hover {
-    background-color: $special_light-grey-5;
-  }
-
-  &:active {
-    color: rgba($special_dark-grey, 0.3);
   }
 }

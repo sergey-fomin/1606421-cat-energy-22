@@ -7,7 +7,7 @@
   line-height: 26px;
   color: $basic_black;
 
-  &:after{
+  &::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -22,7 +22,7 @@
     font-size: 36px;
     line-height: 36px;
 
-    &:before{
+    &::before {
       content: "";
       position: absolute;
       height: 2px;

@@ -27,15 +27,12 @@
 }
 
 .product__link {
-  @media (min-width: $tablet-width) {
-    position: relative;
-  }
+  position: relative;
 }
 
 .product__image {
   position: absolute;
-  top: 20px;
-  left: 0;
+  right: 100%;
 
   @media (min-width: $tablet-width) {
     top: auto;
@@ -66,6 +63,8 @@
 }
 
 .product__info {
+  border-collapse: collapse;
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
@@ -75,6 +74,11 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+
+  td {
+    margin: 0;
+    padding: 0;
+  }
 
   & td:nth-child(even) {
     text-align: right;
