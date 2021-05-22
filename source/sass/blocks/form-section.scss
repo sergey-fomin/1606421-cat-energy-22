@@ -1,5 +1,6 @@
 .form-section {
   border-top: 1px solid $special_light-grey-4;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     border-top: none;

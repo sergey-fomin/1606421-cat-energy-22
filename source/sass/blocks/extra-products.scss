@@ -1,3 +1,7 @@
+.extra-products {
+  overflow: hidden;
+}
+
 .extra-products__wrapper {
   padding: 0 20px;
   margin-bottom: 39px;
@@ -24,43 +28,54 @@
   position: relative;
   margin-bottom: 35px;
   margin-left: 19px;
-  padding-right: 22px;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   color: $basic_black;
   display: inline-block;
 
-  // &:before{
-  //   content: "";
-  //   position: absolute;
-  //   height: 2px;
-  //   top: 20px;
-  //   right: 100%;
-  //   background-color: $basic_green;
-  //   width: 100vw;
-  // }
-
-  // &:after{
-  //   content: "";
-  //   position: absolute;
-  //   height: 2px;
-  //   top: 20px;
-  //   left: 100%;
-  //   background-color: $basic_green;
-  //   width: 100vw;
-  // }
+  &:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 7px;
+    left: calc(100% + 22px);
+    background-color: $basic_green;
+    width: 100vw;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
     margin-left: 67px;
     font-size: 36px;
     line-height: 36px;
+
+    &:before{
+      content: "";
+      position: absolute;
+      height: 2px;
+      bottom: 7px;
+      right: calc(100% + 37px);
+      background-color: $basic_green;
+      width: 100vw;
+    }
+
+    &::after {
+      left: calc(100% + 36px);
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 81px;
     margin-left: 110px;
+
+    &::before {
+      right: calc(100% + 40px);
+    }
+
+    &::after {
+      left: calc(100% + 35px);
+    }
   }
 }
 
