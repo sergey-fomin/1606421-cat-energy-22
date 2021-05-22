@@ -5,9 +5,6 @@
   @media (min-width: $tablet-width) {
     min-height: auto;
   }
-
-  // @media (min-width: $desktop-width) {
-  // }
 }
 
 .main-nav__list {
@@ -20,7 +17,6 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $basic_black;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -34,8 +30,6 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 24px;
-    // Изменить цвет после настройки!
-    color: $basic_black;
     width: 478px;
   }
 }
@@ -76,25 +70,11 @@
   @media (min-width: $desktop-width) {
     padding-top: 69px;
     padding-bottom: 8px;
-    color: $basic_white;
-
-    &:hover,
-    &:focus {
-      color: lighten($basic_white, 40%);
-    }
-
-    &:active {
-      color: lighten($basic_white, 70%);
-    }
   }
 }
 
 .main-nav__item--current a {
   border-bottom: 2px solid $basic_green;
-
-  @media (min-width: $desktop-width) {
-    border-bottom: 2px solid $basic_white;
-  }
 }
 
 .main-nav__toggle {
