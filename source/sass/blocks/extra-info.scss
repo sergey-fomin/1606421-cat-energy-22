@@ -2,6 +2,10 @@
   margin-bottom: 14px;
   border-collapse: collapse;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 4px 0 0 0;
   }

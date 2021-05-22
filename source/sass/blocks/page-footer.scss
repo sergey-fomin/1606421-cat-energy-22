@@ -1,6 +1,11 @@
 .page-footer {
+  min-height: 150px;
   background-color: $basic_grey;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px 61px 30px;
+  }
 }
 
 
@@ -27,14 +32,10 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px 61px 30px;
+    padding: 0;
     height: 34px;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 57px 110px 58px 110px;
   }
 }
 
@@ -69,6 +70,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: auto;
+    max-width: 130px;
   }
 }
 

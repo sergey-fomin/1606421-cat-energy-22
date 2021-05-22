@@ -1,14 +1,17 @@
-.social {
+.social__list {
   width: 130px;
   height: 22px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
     height: 33px;
     margin-top: -2px;
     margin-bottom: 3px;
+    margin-left: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,14 +44,25 @@
 }
 
 .social__link--vkontakte {
-  min-width: 23px;
+  width: 23px;
   height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
 }
 
 .social__link--instagram {
   width: 16px;
   height: 16px;
   margin: 2px 36px auto 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+    margin: 2px 21px auto 27px;
+  }
 }
 
 .social__link--facebook {
@@ -66,5 +80,10 @@
       stroke: $basic_green;
       fill: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
   }
 }

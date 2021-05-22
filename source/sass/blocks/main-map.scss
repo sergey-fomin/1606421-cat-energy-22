@@ -17,7 +17,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 72px 51px 71px;
+    padding: 65px 72px 55px 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +43,7 @@
   @media (min-width: $tablet-width) {
     width: 163px;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,6 +70,14 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.main-map__city {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
   }
 }
 
