@@ -5,7 +5,6 @@
   padding: 0;
   position: relative;
   list-style: none;
-  box-sizing: border-box;
   border: 1px solid $special_grey;
   border-radius: 3px;
   display: flex;
@@ -35,7 +34,6 @@
   max-width: 90px;
   top: calc(100% - 6px);
   padding: 0 16px;
-  box-sizing: border-box;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;

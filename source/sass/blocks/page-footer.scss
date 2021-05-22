@@ -36,7 +36,6 @@
 }
 
 .page-footer__logo {
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -76,7 +75,6 @@
 
 .page-footer__copyright-link {
   padding: 22px 0;
-  box-sizing: border-box;
 
   @media (max-width: $mobile-width-only) {
     min-height: 78px;

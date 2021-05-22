@@ -80,10 +80,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  // Не получается!
-  // &:nth-child(n + 1) {
-  //   margin-right: 42px;
-  // }
   @media (min-width: $tablet-width) {
     min-width: 366px;
   }

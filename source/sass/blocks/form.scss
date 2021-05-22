@@ -63,7 +63,6 @@
   height: 45px;
   border: 1px solid $special_light-grey-3;
   border-radius: 0;
-  box-sizing: border-box;
   margin-left: 12px;
   padding-left: 16px;
   flex-grow: 1;
@@ -123,7 +122,6 @@
 .form__goals {
   margin: 0 0 26px 0;
   padding: 28px 0 25px 0;
-  box-sizing: border-box;
   border: none;
   border-bottom: 1px solid $special_light-grey-4;
   display: flex;
@@ -159,7 +157,6 @@
     height: 30px;
     border: 1px solid $special_light-grey-4;
     border-radius: 50%;
-    box-sizing: border-box;
   }
 
   @media (min-width: $tablet-width) {
@@ -185,7 +182,6 @@
     border: 1px solid $basic_green;
     border-radius: 50%;
     background-color: $basic_green;
-    box-sizing: border-box;
   }
 
   @media (min-width: $tablet-width) {
@@ -234,7 +230,6 @@
   text-transform: uppercase;
   border: 1px solid $special_light-grey-3;
   height: 150px;
-  box-sizing: border-box;
   flex-grow: 1;
 }
 
@@ -260,7 +255,6 @@
     top: 2px;
     width: 26px;
     height: 26px;
-    box-sizing: border-box;
   }
 
   @media (min-width: $tablet-width) {
@@ -280,7 +274,6 @@
   padding-left: 46px;
   position: relative;
   display: block;
-  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -290,7 +283,6 @@
     width: 30px;
     height: 30px;
     border: 1px solid $special_grey;
-    box-sizing: border-box;
   }
 
   @media (min-width: $tablet-width) {
