@@ -71,8 +71,12 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
+
     min-height: auto;
     max-width: 130px;
   }
