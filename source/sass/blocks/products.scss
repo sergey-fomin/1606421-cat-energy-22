@@ -1,5 +1,9 @@
 .products {
   margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .products__wrapper {
@@ -50,7 +54,7 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 431px;
-    margin-bottom: 143px;
+    margin-top: 140px;
     padding: 162px 38px 40px 39px;
     border: none;
   }
