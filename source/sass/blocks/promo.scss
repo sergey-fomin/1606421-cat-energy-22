@@ -30,7 +30,7 @@
 
   @media (min-width: $tablet-width) {
     height: 850px;
-    padding: 40px 112px;
+    padding: 62px 112px;
     align-items: flex-start;
 
     :not(img) {
@@ -56,6 +56,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-left: 5px;
+    margin-bottom: 42px;
     font-size: 60px;
     line-height: 60px;
     color: $basic_black;
@@ -78,6 +80,8 @@
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
+    margin-left: 5px;
+    margin-bottom: 48px;
     font-size: 20px;
     line-height: 20px;
     color: $basic_black;
@@ -90,7 +94,7 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     position: absolute;
-    bottom: 0;
+    bottom: -22px;
     transform: translateX(-50%);
     left: 50%;
   }
