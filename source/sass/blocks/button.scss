@@ -55,3 +55,10 @@
     color: rgba($special_dark-grey, 0.3);
   }
 }
+
+.button--submit-size {
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    height: 52px;
+  }
+}

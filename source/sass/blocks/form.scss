@@ -17,11 +17,16 @@
     width: 100vw;
   }
 
-  &--checkbox-area {
+  &.form__section-title--checkbox-area {
     margin-bottom: 29px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 43px 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0 3px 75px 3px;
     max-width: none;
     font-size: 36px;
     line-height: 36px;
@@ -30,7 +35,7 @@
       content: "";
       position: absolute;
       height: 2px;
-      top: 17px;
+      top: 22px;
       right: calc(100% + 40px);
       background-color: $basic_green;
       width: 100vw;
@@ -38,6 +43,7 @@
 
     &::after {
       left: calc(100% + 40px);
+      top: 22px;
     }
   }
 }
@@ -47,6 +53,7 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
+    padding: 0 0 0 3px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -115,6 +122,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: 16px;
+    padding-left: 17px;
     font-size: 20px;
     line-height: 30px;
     height: 52px;
@@ -179,8 +188,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 195px;
+    margin: 45px 0 75px 0;
     border: 1px solid $special_light-grey-3;
-    padding: 25px 28px;
+    padding: 14px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -211,6 +222,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 12px 0;
     font-size: 20px;
     line-height: 30px;
     padding-left: 60px;
@@ -218,6 +230,7 @@
     &::before {
       width: 40px;
       height: 40px;
+      top: -3px;
     }
   }
 }
@@ -238,7 +251,7 @@
   @media (min-width: $tablet-width) {
     &:checked + .form__radio-label::after {
       left: 11px;
-      top: 11px;
+      top: 8px;
       width: 18px;
       height: 18px;
     }
@@ -252,7 +265,12 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 45px 0;
+  }
+
   @media (min-width: $desktop-width) {
+    margin: 0 0 45px 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -284,6 +302,13 @@
   border: 1px solid $special_light-grey-3;
   min-height: 150px;
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 175px;
+    padding-left: 20px;
+  }
 }
 
 .form__extra {
@@ -294,6 +319,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 37px 3px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -313,7 +339,7 @@
   @media (min-width: $tablet-width) {
     &:checked + .form__checkbox-label::after {
       left: 7px;
-      top: 7px;
+      top: 2px;
     }
   }
 }
@@ -342,8 +368,9 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 59px;
-    margin-bottom: 54px;
-    width: 305px;
+    margin: 21px 0;
+    min-width: 285px;
+    max-width: 300px;
 
     &::before {
       width: 40px;
