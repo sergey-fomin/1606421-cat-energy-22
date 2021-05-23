@@ -33,6 +33,10 @@
 
   @media (min-width: $desktop-width) {
     width: 172px;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 46px);
   }
 }
 
