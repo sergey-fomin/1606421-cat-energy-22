@@ -61,4 +61,9 @@
     width: 282px;
     height: 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    width: 568px;
+  }
 }
