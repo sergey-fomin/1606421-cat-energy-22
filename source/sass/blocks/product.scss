@@ -3,8 +3,7 @@
 }
 
 .product__wrapper {
-  padding-left: 140px;
-  padding-bottom: 22px;
+  padding: 0 0 22px 140px;
   display: flex;
   flex-direction: column;
 
@@ -37,9 +36,6 @@
     max-width: 172px;
     width: 172px;
     height: 196px;
-    top: auto;
-    left: 50%;
-    transform: translateX(-50%);
     bottom: calc(100% + 46px);
   }
 }
@@ -56,12 +52,12 @@
     font-size: 20px;
     line-height: 24px;
     width: 145px;
-    margin-bottom: 13px;
+    margin: 0 0 13px 0;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     line-height: 21px;
   }
 }
