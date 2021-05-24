@@ -105,6 +105,33 @@
   }
 }
 
+.form__contacts-input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.form__input-label--email-icon {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    top: 20px;
+    right: 15px;
+    background-image: url("../../img/icon-email.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    & ~.form__input:focus {
+      path {
+        stroke: $basic_green;
+      }
+    }
+  }
+}
+
+
 .form__input {
   font-size: 16px;
   line-height: 18px;
@@ -117,6 +144,18 @@
   padding-left: 14px;
   flex-grow: 1;
 
+  &::before {
+    content: url("../../img/icon-email.svg");
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    top: 20px;
+    right: 15px;
+    // background-image: url("../../img/icon-email.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   &:hover {
     border: 1px solid $special_grey;
   }
@@ -124,6 +163,12 @@
   &:focus {
     outline: none;
     border: 2px solid $special_dark-grey;
+
+    & .form__input-label--email-icon {
+      path {
+        stroke: $basic_green;
+      }
+    }
   }
 
   // &:required {
@@ -143,33 +188,20 @@
   }
 }
 
-// .form__input--email-icon {
-//   &::after {
-//     content: "";
-//     width: 24px;
-//     height: 12px;
-//     margin-left: 16px;
-//     margin-right: 8px;
-//     background-image: url("../../img/icon-arrow.svg");
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     z-index: 2;
-//   }
-// }
 
-// .form__input--phone-icon {
-//   &::after {
-//     content: "";
-//     width: 24px;
-//     height: 12px;
-//     margin-left: 16px;
-//     margin-right: 8px;
-//     background-image: url("../../img/icon-arrow.svg");
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     z-index: 2;
-//   }
-// }
+.form__input-label--phone-icon {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    // margin-left: 16px;
+    // margin-right: 8px;
+    background-image: url("../../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
 
 .form__goals {
   margin: 29px 0 26px 0;
