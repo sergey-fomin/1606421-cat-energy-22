@@ -38,7 +38,6 @@
 
   @media (min-width: $desktop-width) {
     width: 354px;
-    height: 654px;
     top: -262px;
     right: 0;
   }
@@ -47,7 +46,7 @@
 .slider__controls {
   width: 200px;
   height: 20px;
-  margin-bottom: 5px;
+  margin: 0 0 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,22 +125,23 @@
     transform: translateY(-50%);
     left: 197px;
 
+    &::before,
+    &::after {
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
     &::before {
       width: 8px;
       height: 8px;
-      border-radius: 50%;
       border: 13px solid $basic_green;
-      top: 50%;
-      transform: translateY(-50%);
     }
 
     &::after {
       width: 34px;
       height: 34px;
-      border-radius: 50%;
       border: 1px solid $special_light-grey-8;
-      top: 50%;
-      transform: translateY(-50%);
     }
 
     &:hover {
