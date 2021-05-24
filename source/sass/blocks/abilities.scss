@@ -59,10 +59,7 @@
       border-radius: 50%;
       grid-area: title;
     }
-  }
 
-  &--weight-loss,
-  &--mass-gain {
     &::after {
       content: "";
       background-repeat: no-repeat;
