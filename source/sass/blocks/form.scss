@@ -122,12 +122,6 @@
     background-image: url("../../img/icon-email.svg");
     background-repeat: no-repeat;
     background-size: contain;
-
-    & ~.form__input:focus {
-      path {
-        stroke: $basic_green;
-      }
-    }
   }
 }
 
