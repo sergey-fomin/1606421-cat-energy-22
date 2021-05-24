@@ -15,6 +15,14 @@
     top: 67px;
     right: 50%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 405px;
+    height: 536px;
+    left: -80px;
+    top: -266px;
+    z-index: 1;
+  }
 }
 
 .slider__after-image {
@@ -22,11 +30,19 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    width: 354px;
-    height: 607px;
+    width: 325px;
+    height: 654px;
     display: block;
     left: 50%;
     top: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 354px;
+    height: 654px;
+    top: -262px;
+    right: 0;
+    z-index: 1;
   }
 }
 

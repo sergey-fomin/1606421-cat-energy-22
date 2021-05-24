@@ -39,6 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 640px;
     padding-left: 190px;
     padding-right: 330px;
   }
@@ -65,6 +66,11 @@
     display: block;
     width: 414px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 46px;
+    margin-left: 0;
+  }
 }
 
 .promo__slogan {
@@ -86,6 +92,11 @@
     line-height: 20px;
     color: $basic_black;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 52px;
+  }
 }
 
 .promo__image {
@@ -101,7 +112,7 @@
 
   @media (min-width: $desktop-width) {
     width: 552px;
-    top: -24px;
+    top: 27px;
     transform: translateX(-162px);
     left: 50%;
   }
