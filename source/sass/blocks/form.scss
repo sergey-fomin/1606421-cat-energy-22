@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   max-width: 185px;
-  margin-bottom: 35px;
+  margin: 0 0 35px 0;
   font-size: 24px;
   line-height: 26px;
   color: $basic_black;
@@ -18,7 +18,7 @@
   }
 
   &.form__section-title--checkbox-area {
-    margin-bottom: 29px;
+    margin: 0 0 29px 0;
 
     @media (min-width: $tablet-width) {
       margin: 0 0 43px 0;
@@ -48,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin: 0 3px 75px 3px;
   }
 }
 
@@ -57,7 +57,7 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 68px;
+    margin: 0 0 68px 0;
     padding: 0 0 0 3px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,10 +71,6 @@
   border: none;
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
 
   @media (min-width: $desktop-width) {
     padding: 0;
@@ -90,14 +86,28 @@
   line-height: 18px;
   color: $special_dark-grey;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin: 0 0 14px 0;
   display: flex;
   align-items: center;
+
+  &--email-icon {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 14px;
+      top: 20px;
+      right: 15px;
+      background-image: url("../../img/icon-email.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,21 +121,6 @@
   flex-direction: row-reverse;
 }
 
-.form__input-label--email-icon {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 14px;
-    top: 20px;
-    right: 15px;
-    background-image: url("../../img/icon-email.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-
-
 .form__input {
   font-size: 16px;
   line-height: 18px;
@@ -134,21 +129,9 @@
   height: 45px;
   border: 1px solid $special_light-grey-3;
   border-radius: 0;
-  margin-left: 12px;
-  padding-left: 14px;
+  margin: 0 0 0 12px;
+  padding: 0 0 0 14px;
   flex-grow: 1;
-
-  &::before {
-    content: url("../../img/icon-email.svg");
-    position: absolute;
-    width: 20px;
-    height: 14px;
-    top: 20px;
-    right: 15px;
-    // background-image: url("../../img/icon-email.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
 
   &:hover {
     border: 1px solid $special_grey;
@@ -157,43 +140,14 @@
   &:focus {
     outline: none;
     border: 2px solid $special_dark-grey;
-
-    & .form__input-label--email-icon {
-      path {
-        stroke: $basic_green;
-      }
-    }
-  }
-
-  // &:required {
-  //   border: 1px solid $special_light-grey-3;
-  // }
-
-  &:invalid {
-    border: 2px solid $special_pink;
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 16px;
-    padding-left: 17px;
+    margin: 0 0 0 16px;
+    padding: 0 0 0 17px;
     font-size: 20px;
     line-height: 30px;
     height: 52px;
-  }
-}
-
-
-.form__input-label--phone-icon {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    // margin-left: 16px;
-    // margin-right: 8px;
-    background-image: url("../../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 
@@ -246,10 +200,9 @@
   color: $special_dark-grey-2;
   text-transform: uppercase;
   height: 30px;
-  margin-bottom: 13px;
-  padding-left: 45px;
+  margin: 0 0 13px 0;
+  padding: 0 0 0 45px;
   position: relative;
-  display: block;
 
   &::before {
     content: "";
@@ -325,19 +278,18 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin: 0 0 65px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 68px;
+    margin: 0 0 68px 0;
   }
 }
 
 .form__textarea {
   font-size: 16px;
   line-height: 18px;
-  padding-top: 12px;
-  padding-left: 14px;
+  padding: 12px 0 0 14px;
   color: $special_dark-grey;
   text-transform: uppercase;
   border: 1px solid $special_light-grey-3;
@@ -348,7 +300,7 @@
     font-size: 20px;
     line-height: 30px;
     min-height: 175px;
-    padding-left: 20px;
+    padding: 0 0 0 20px;
   }
 }
 
@@ -407,9 +359,8 @@
   color: $basic_black;
   text-transform: uppercase;
   margin: 12px 0;
-  padding-left: 46px;
+  padding: 0 0 0 46px;
   position: relative;
-  display: block;
 
   &::before {
     content: "";
@@ -424,7 +375,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 59px;
+    padding: 0 0 0 59px;
     margin: 21px 0;
     min-width: 285px;
     max-width: 300px;
@@ -432,7 +383,7 @@
     &::before {
       width: 40px;
       height: 40px;
-      margin-bottom: 61px;
+      margin: 0 0 61px 0;
     }
   }
 
