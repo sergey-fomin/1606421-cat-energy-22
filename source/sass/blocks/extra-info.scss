@@ -1,9 +1,9 @@
 .extra-info {
-  margin-bottom: 14px;
+  margin: 0 0 14px 0;
   border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 19px;
+    margin: 0 0 19px 0;
   }
 
   @media (min-width: $desktop-width) {
