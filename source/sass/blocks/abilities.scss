@@ -27,11 +27,11 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -40,10 +40,8 @@
 }
 
 .abilities__item {
-  margin-bottom: 20px;
-  padding-top: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 0 20px 0;
+  padding: 24px 20px 0 20px;
   background-color: $basic_grey;
   display: grid;
   grid-template-rows: min-content;
@@ -63,38 +61,37 @@
     }
   }
 
-  &--weight-loss {
+  &--weight-loss,
+  &--mass-gain {
     &::after {
       content: "";
-      width: 36px;
-      height: 50px;
-      margin-top: -3px;
-      margin-left: 7px;
-      background-image: url("../../img/cat-slim.svg");
       background-repeat: no-repeat;
       background-size: contain;
       z-index: 2;
       grid-area: title;
+    }
+  }
+
+  &--weight-loss {
+    &::after {
+      width: 36px;
+      height: 50px;
+      margin: -3px 0 0 7px;
+      background-image: url("../../img/cat-slim.svg");
     }
   }
 
   &--mass-gain {
     &::after {
-      content: "";
       width: 67px;
       height: 28px;
-      margin-top: 11px;
-      margin-left: -9.5px;
+      margin: 11px 0 0 -9.5px;
       background-image: url("../../img/cat-pro.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      z-index: 2;
-      grid-area: title;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
     padding: 57px 62px 57px 52px;
     grid-template-columns: auto min-content;
     grid-template-areas: "title icon"
@@ -103,11 +100,10 @@
 
     &--weight-loss,
     &--mass-gain {
-      &::before {
+      &::before, {
         width: 200px;
         height: 200px;
-        margin-top: 35px;
-        margin-left: auto;
+        margin: 35px 0 0 auto;
         grid-area: icon;
       }
     }
@@ -144,8 +140,7 @@
       &::before {
         width: 100px;
         height: 100px;
-        margin-top: 0;
-        margin-left: 0;
+        margin: 0;
         grid-area: title;
       }
     }
@@ -177,35 +172,32 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 6px 0 29px 0;
-  padding: 0;
-  padding-left: 71px;
+  padding: 0 0 0 71px;
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
     margin: 19px 0 10px 0;
     font-size: 36px;
     line-height: 36px;
-    padding-left: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin: 30px 0 74px 0;
-    padding-left: 162px;
+    padding: 0 0 0 162px;
   }
 }
 
 .abilities__description {
   grid-area: text;
   margin: 0 0 23px 0;
-  padding: 0;
   font-family: "Arial", sans-serif;
-  font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
     margin: 17px 0 20px 0;
-    padding-right: 17px;
+    padding: 0 17px 0 0;
     font-size: 16px;
     line-height: 24px;
     color: $basic_black;
@@ -222,8 +214,7 @@
   grid-area: link;
   position: relative;
   height: 57px;
-  padding-top: 19px;
-  padding-bottom: 22px;
+  padding: 19px 0 22px 0;
   font-size: 16px;
   line-height: 16px;
   color: $basic_black;
@@ -244,19 +235,19 @@
     content: "";
     width: 24px;
     height: 12px;
-    margin-left: 16px;
-    margin-right: 8px;
+    margin: 0 8px 0 16px;
     background-image: url("../../img/icon-arrow.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 2;
   }
 
-  &:hover::after,
-  &:focus::after {
-    width: 32px;
-    background-image: url("../../img/icon-arrow-hover.svg");
-    transition: all 0.1s ease-in-out;
+  &:hover,
+  &:focus {
+    &::after {
+      width: 32px;
+      background-image: url("../../img/icon-arrow-hover.svg");
+      transition: all 0.1s ease-in-out;
+    }
   }
 
   &:active {
@@ -265,8 +256,7 @@
 
   @media (min-width: $tablet-width) {
     height: auto;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     margin: 30px 0 0 0;
     font-size: 20px;
     line-height: 30px;
@@ -276,16 +266,11 @@
     }
 
     &::after {
-      padding-left: 25px;
-      margin-left: 26px;
+      margin: 0 8px 0 26px;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-
-    &::after {
-      padding-left: 27px;
-    }
   }
 }
