@@ -4,20 +4,19 @@
 
 .extra-products__wrapper {
   padding: 0 20px;
-  margin-bottom: 34px;
+  margin: 0 0 34px 0;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    margin-bottom: 76px;
+    margin: 0 0 76px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0;
-    margin: 0 auto;
-    margin-bottom: 86px;
+    margin: 0 auto 86px auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -44,9 +43,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 67px;
-    margin-bottom: 80px;
-    margin-left: 67px;
+    margin: 67px 0 80px 67px;
     font-size: 36px;
     line-height: 36px;
 
@@ -67,9 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 40px;
-    margin-bottom: 81px;
-    margin-left: 110px;
+    margin: 40px 0 81px 110px;
 
     &::before {
       right: calc(100% + 40px);
