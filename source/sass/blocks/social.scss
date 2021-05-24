@@ -9,14 +9,11 @@
 
   @media (min-width: $tablet-width) {
     height: 33px;
-    margin-top: -2px;
-    margin-bottom: 3px;
-    margin-left: 23px;
+    margin: -2px 0 3px 23px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -1px;
-    margin-bottom: 2px;
+    margin: -1px 0 2px 0;
   }
 }
 
