@@ -13,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     border-top: none;
+    background-image: linear-gradient(90deg,$basic_grey 0%,$basic_grey 72.57%, $special_light-grey-2 72.57%, $special_light-grey-2 100%);
   }
 }
 
