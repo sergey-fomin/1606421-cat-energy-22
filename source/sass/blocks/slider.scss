@@ -42,5 +42,9 @@
     width: 354px;
     height: 654px;
     top: -262px;
+    background-image: linear-gradient(90deg, $special_light-grey-2 50%, $special_light-grey-2 100%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100vw 465px;
   }
 }
