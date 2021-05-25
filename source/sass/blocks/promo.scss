@@ -1,55 +1,73 @@
 .promo {
-  margin: 0;
+  position: relative;
+  margin: 0 0 24px 0;
   padding: 0;
-  margin-bottom: 22px;
-  background-color: rgba($basic_green, 0.85);
-  // background-image: url("../../img/index-background-cat.png");
+  background-image: linear-gradient(90deg, rgba($basic_green, 0.85) 0%, rgba($basic_green, 0.85) 0%),
+    url("../img/index-bg-cat-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 302px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(90deg, rgba($basic_green, 0.85) 0%, rgba($basic_green, 0.85) 0%),
+      url("../img/index-bg-cat-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
-    background-color: $basic_white;
+    background: none;
   }
 }
 
 .promo__wrapper {
-  padding-top: 27px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 27px 20px 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 112px;
+    height: 850px;
+    padding: 62px 112px;
     align-items: flex-start;
+
+    :not(img) {
+      z-index: 1;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 190px;
-    padding-right: 330px;
+    height: 640px;
+    padding: 62px 330px 112px 190px;
   }
 }
 
 .promo__header {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $basic_white;
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 42px 5px;
     font-size: 60px;
     line-height: 60px;
     color: $basic_black;
+    text-align: left;
+    display: block;
+    width: 414px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 46px 0 42px 0;
   }
 }
 
 .promo__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -57,17 +75,35 @@
   text-transform: uppercase;
   color: $basic_white;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 29px;
+  margin: 0 0 29px 0;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 48px 5px;
     font-size: 20px;
     line-height: 20px;
     color: $basic_black;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 0;
+  }
 }
 
 .promo__image {
-  max-width: 100%;
-  margin-bottom: 3px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    position: absolute;
+    bottom: -22px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    top: 27px;
+    transform: translateX(-162px);
+    left: 50%;
+  }
 }

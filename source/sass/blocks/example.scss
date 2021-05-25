@@ -1,25 +1,38 @@
 .example {
   background-color: $special_light-grey-2;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     background-color: $basic_white;
     border-top: 1px solid $special_light-grey-7;
+    background-image: linear-gradient(90deg, $special_light-grey-2 0%, $special_light-grey-2 0%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto 462px;
   }
 
   @media (min-width: $desktop-width) {
     border-top: none;
+    background-image: linear-gradient(90deg, $basic_grey 0%, $basic_grey 72.57%, $special_light-grey-2 72.57%, $special_light-grey-2 100%);
   }
 }
 
 .example__wrapper {
-  padding: 27px 20px 31px 20px;
+  padding: 27px 20px 37px 20px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     padding: 43px 30px 33px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 11px 110px 67px 110px;
+    width: 1220px;
+    margin: 69px auto 0 auto;
+    padding: 0 0 65px 0;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content;
   }
 }
 
@@ -30,24 +43,35 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 63px 0;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 149px 0;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
   }
 }
 
 .example__text {
   margin: 0 0 25px 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 10px 54px 0;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    margin: 0 10px 65px 0;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
   }
 }
 
@@ -58,95 +82,85 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
+    width: 366px;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
     flex-direction: column;
-
-    @media (min-width: $desktop-width) {
-      width: 366px;
-    }
+    justify-content: flex-start;
   }
 }
 
 .example__stats-list {
-  margin: 0 0 25px 0;
+  margin: 0 0 34px 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-// Вынести в отдельный блок?
-.stats__item {
-  width: 124px;
-  height: 64px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.stats__number {
-  font-size: 24px;
-  line-height: 24px;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 37px;
+    min-width: 366px;
+    margin: 0;
   }
-}
 
-.stats__description {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  color: $special_dark-grey;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    font-size: 14px;
-    line-height: 14px;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 50px 0;
   }
 }
 
 .example__stats-text {
-  margin: 0 0 42px 0;
+  margin: 0 0 20px 0;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 10px 0;
     font-size: 20px;
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 327px;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    :nth-child(2) {
+      margin-left: 63px;
+    }
   }
 }
 
-.example__changes-list {
-  margin: 0 0 27px 0;
-}
+.example__changes {
+  min-height: 280px;
+  margin: 0 0 7px 0;
+  position: relative;
 
-//.example__changes-item
+  @media (min-width: $desktop-width) {
+    min-height: auto;
+    grid-row: 2 / 3;
+    grid-column: -1 / -2;
+  }
+}
 
 .example__toggles {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 330px 0 35px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 120px 0 0 0;
+    grid-row: 3 / 4;
+    grid-column: -1 / -2;
+  }
 }
-
-// Вынести в отдельный блок?
-// .slider
-
-// .slider__item
-
-// .slider__toggles
-
-.slider__toggle {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-// .slider__toggle--current

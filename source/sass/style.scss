@@ -3,7 +3,6 @@
 @import "general/normalize.scss";
 @import "general/fonts.scss";
 @import "general/variables.scss";
-// @import "general/mixins.scss";
 @import "general/common.scss";
 
 // Blocks
@@ -15,8 +14,19 @@
 @import "blocks/abilities.scss";
 @import "blocks/about.scss";
 @import "blocks/example.scss";
+@import "blocks/stats.scss";
 @import "blocks/main-map.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/copyright-link.scss";
+@import "blocks/social.scss";
 @import "blocks/form-section.scss";
+@import "blocks/form.scss";
 @import "blocks/products.scss";
+@import "blocks/product.scss";
+@import "blocks/more-products.scss";
 @import "blocks/extra-products.scss";
+@import "blocks/extra-product.scss";
+@import "blocks/extra-info.scss";
+@import "blocks/extra-promo.scss";
+@import "blocks/slider.scss";
+@import "blocks/slider-controls.scss";

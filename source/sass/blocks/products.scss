@@ -1,5 +1,7 @@
 .products {
-  margin-bottom: 25px;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 35px 0;
+  }
 }
 
 .products__wrapper {
@@ -19,202 +21,39 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
   }
 }
 
 .products__item {
+  min-height: 209px;
+  padding: 20px 20px 24px 20px;
   border-bottom: 1px solid $special_light-grey-5;
-  box-sizing: border-box;
 
-  &:nth-child(1) {
-    border-top: 1px solid $special_light-grey-5;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 140px;
-    border: none;
-  }
-}
-
-.product {
-  @media (min-width: $tablet-width) {
-    width: 324px;
-    min-height: 430px;
-    background-color: $basic_grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
-  }
-}
-
-.product__wrapper {
-  position: relative;
-  padding-left: 140px;
-  padding-bottom: 22px;
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    width: 252px;
-    padding: 0;
-    margin: 0 37px 33px 37px;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 169px;
-    margin: 0 36px 33px 40px;
-  }
-}
-
-// .product__link
-
-.product__image {
-  position: absolute;
-  top: 33px;
-  left: 36px;
-
-  @media (min-width: $tablet-width) {
-    top: auto;
-    bottom: 191px;
-  }
-}
-
-.product__title {
-  width: 80px;
-  margin: 0 0 14px 0;
-  font-size: 16px;
-  line-height: 20px;
-  color: $special_dark-grey-2;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 24px;
-    width: 145px;
-    margin-bottom: 21px;
-    text-align: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    line-height: 21px;
-  }
-}
-
-.product__info {
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-}
-
-.product__table-row {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-
-  & td:nth-child(even) {
-    text-align: right;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    font-size: 16px;
-    border-bottom: 1px solid $special_grey;
-  }
-}
-
-.more-products {
-  border-bottom: 1px solid $special_light-grey-5;
-  padding: 25px 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    width: 324px;
-    min-height: 429px;
-    border: 2px solid $basic_grey;
-    margin-bottom: 140px;
-    padding: 0 37px 38px 38px;
-    justify-content: flex-end;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
-    min-height: 430px;
-    padding: 0 38px 40px 38px;
-  }
-}
-
-.more-products__open-link {
-  &::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    margin: 0 auto 23px auto;
-    background-image: url("../../img/plus-sign.svg");
-    background-repeat: no-repeat;
-    display: block;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      content: "";
-      width: 60px;
-      height: 60px;
-      margin: 0 auto 49px auto;
+  @media (max-width: $mobile-width-only) {
+    &:nth-child(1) {
+      border-top: 1px solid $special_light-grey-5;
+      padding: 20px 20px 23px 20px;
     }
   }
-}
-
-.more-products__title {
-  margin: 0 0 8px 0;
-  font-size: 16px;
-  line-height: 20px;
-  color: $special_black;
-  text-transform: uppercase;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
-    width: 135px;
-    font-size: 20px;
-    line-height: 22px;
+    width: 324px;
+    min-height: 430px;
+    margin: 140px 0 0 0;
+    padding: 161px 36px 40px 36px;
+    border: none;
+    background-color: $basic_grey;
   }
-}
 
-.more-products__text {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  color: $special_dark-grey;
-  margin: 0 0 21px 0;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 87px;
-    width: 170px;
-    font-size: 16px;
-    line-height: 18px;
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 431px;
+    padding: 162px 38px 40px 39px;
   }
-}
-
-.more-products__button {
-  color: $special_dark-grey;
-  background-color: $basic_grey;
 }

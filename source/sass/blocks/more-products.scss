@@ -1,0 +1,80 @@
+.more-products {
+  border-bottom: 1px solid $special_light-grey-5;
+  padding: 26px 20px 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 429px;
+    border: 2px solid $basic_grey;
+    margin: 143px 0 0 0;
+    padding: 0 37px 38px 38px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 430px;
+    padding: 0 38px 40px 38px;
+  }
+}
+
+.more-products__open-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.more-products__open-link--plus-icon {
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/plus-sign.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.more-products__title {
+  margin: 23px 0 8px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special_black;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 49px 0 23px 0;
+    width: 135px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.more-products__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+  margin: 0 0 21px 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 87px 0;
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

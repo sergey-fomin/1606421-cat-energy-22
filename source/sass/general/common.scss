@@ -16,23 +16,24 @@
   min-height: 100%;
 }
 
-.page__title {
-  font-family: "Oswald", sans-serif;
+.page-main__title {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin: 27px 20px 41px 20px;
+  margin: 26px 20px 41px 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 41px 30px 165px 30px;
+    margin: 63px 30px 25px 30px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
     font-size: 60px;
     line-height: 60px;
-    margin: 23px 110px 165px 110px;
+    margin: 75px auto 25px auto;
   }
 }
 
@@ -53,10 +54,13 @@ img {
   margin: -1px;
 }
 
-.section-title {
-  margin-bottom: 35px;
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 400;
-  color: $basic_black;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }

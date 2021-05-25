@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
+  width: 100%;
   height: 40px;
   border: none;
   margin: 0;
@@ -20,7 +20,49 @@
   }
 
   &:active {
-    background-color: $basic_green-2;
     color: rgba($basic_white, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &--promo-size {
+    @media (min-width: $tablet-width) {
+      width: 244px;
+      height: 54px;
+    }
+  }
+
+  &--bigger-font {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &--more-products {
+    color: $special_dark-grey;
+    background-color: $basic_grey;
+
+    &:focus,
+    &:hover {
+      background-color: $special_light-grey-5;
+    }
+
+    &:active {
+      color: rgba($special_dark-grey, 0.3);
+    }
+  }
+
+  &--submit-size {
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      width: 282px;
+      height: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 568px;
+    }
   }
 }
