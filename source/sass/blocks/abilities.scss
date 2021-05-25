@@ -76,7 +76,7 @@
       width: 36px;
       height: 50px;
       margin: -3px 0 0 7px;
-      background-image: url("../../img/cat-slim.svg");
+      background-image: url("../img/cat-slim.svg");
     }
   }
 
@@ -85,7 +85,7 @@
       width: 67px;
       height: 28px;
       margin: 11px 0 0 -9.5px;
-      background-image: url("../../img/cat-pro.svg");
+      background-image: url("../img/cat-pro.svg");
     }
   }
 
@@ -235,7 +235,7 @@
     width: 24px;
     height: 12px;
     margin: 0 8px 0 16px;
-    background-image: url("../../img/icon-arrow.svg");
+    background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -244,7 +244,7 @@
   &:focus {
     &::after {
       width: 32px;
-      background-image: url("../../img/icon-arrow-hover.svg");
+      background-image: url("../img/icon-arrow-hover.svg");
       transition: all 0.1s ease-in-out;
     }
   }
