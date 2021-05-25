@@ -21,12 +21,12 @@
     margin: 0 0 29px 0;
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 43px 0;
+      margin: 0 0 41px 0;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 3px 75px 3px;
+    margin: 0 3px 78px 3px;
     max-width: none;
     font-size: 36px;
     line-height: 36px;
@@ -81,6 +81,50 @@
   }
 }
 
+.form__input-icon {
+  position: absolute;
+
+  &--email,
+  &--phone {
+    width: 20px;
+  }
+
+  &--email {
+    height: 14px;
+    top: 16px;
+    right: 15px;
+  }
+
+  &--phone {
+    height: 20px;
+    top: 12px;
+    right: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--email {
+      width: 18px;
+      height: 13px;
+      top: 18px;
+    }
+
+    &--phone {
+      top: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--email {
+      top: 19px;
+      right: 20px;
+    }
+
+    &--phone {
+      right: 17px;
+    }
+  }
+}
+
 .form__input-label {
   font-size: 16px;
   line-height: 18px;
@@ -89,20 +133,6 @@
   margin: 0 0 14px 0;
   display: flex;
   align-items: center;
-
-  &--email-icon {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 14px;
-      top: 20px;
-      right: 15px;
-      background-image: url("../../img/icon-email.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -115,11 +145,6 @@
   }
 }
 
-.form__contacts-input-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: row-reverse;
-}
 
 .form__input {
   font-size: 16px;
@@ -140,19 +165,63 @@
   &:focus {
     outline: none;
     border: 2px solid $special_dark-grey;
+
+    & + .form__input-icon {
+      &--email {
+        path {
+          stroke: $basic_green;
+        }
+
+        line {
+          stroke: $basic_green;
+        }
+      }
+
+      &--phone {
+        path {
+          fill: $basic_green;
+        }
+      }
+    }
+  }
+
+  &--error {
+    border: 2px solid $status_error;
+
+    & + .form__input-icon {
+      &--email {
+        path {
+          stroke: $status_error;
+        }
+
+        line {
+          stroke: $status_error;
+        }
+      }
+
+      &--phone {
+        path {
+          fill: $status_error;
+        }
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 16px;
-    padding: 0 0 0 17px;
+    margin: 0 0 0 20px;
+    padding: 0 0 0 18px;
     font-size: 20px;
     line-height: 30px;
     height: 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 15px;
+  }
 }
 
 .form__goals {
-  margin: 29px 0 26px 0;
+  margin: 29px 0 27px 0;
   padding: 0;
   border: none;
   display: flex;
@@ -242,6 +311,15 @@
     background-color: $basic_green;
   }
 
+  &:disabled + .form__radio-label {
+    opacity: 0.3;
+
+    &::after,
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     &:checked + .form__radio-label::after {
       left: 11px;
@@ -271,6 +349,31 @@
   }
 }
 
+.form__contacts-input-wrapper {
+  position: relative;
+  margin: 0 0 15px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  .form__input-label {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 571px;
+
+    & .form__input-label {
+      width: auto;
+    }
+  }
+}
+
 .form__comments {
   margin: 0 0 27px 0;
   padding: 0;
@@ -278,7 +381,7 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 65px 0;
+    margin: 0 0 62px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -300,7 +403,7 @@
     font-size: 20px;
     line-height: 30px;
     min-height: 175px;
-    padding: 0 0 0 20px;
+    padding: 8px 0 0 20px;
   }
 }
 
@@ -314,7 +417,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 43px 0;
+    margin: 0 0 45px 0;
   }
 }
 
@@ -330,6 +433,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(3, 325px) auto;
   }
@@ -343,6 +447,15 @@
     top: -4px;
     width: 26px;
     height: 26px;
+  }
+
+  &:disabled + .form__checkbox-label {
+    opacity: 0.3;
+
+    &::after,
+    &::before {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -397,6 +510,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    margin: 0 4px;
     flex-direction: row;
     flex-wrap: wrap;
   }
