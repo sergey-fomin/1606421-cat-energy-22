@@ -23,7 +23,7 @@
   right: 100%;
 
   @media (min-width: $tablet-width) {
-    max-width: 168px;
+    max-width: fit-content;
     width: 168px;
     height: 200px;
     top: auto;
